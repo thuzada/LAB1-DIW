@@ -34,6 +34,9 @@ export default function Projects() {
               {p.pinned && <span className="tag">{t.projects.pinned}</span>}
             </div>
             <article className="card project">
+              {p.image && (
+                <img className="project__media" src={p.image} alt={p.name[lang]} loading="lazy" />
+              )}
               <h2>{p.name[lang]}</h2>
               <p>{p.description[lang]}</p>
               <ul className="chips">

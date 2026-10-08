@@ -41,6 +41,7 @@ export const about = {
 
 // pinned: true = recebe o selo "Destaque" (repositórios fixados no GitHub).
 // A timeline é ordenada pela data (AAAA-MM), do mais antigo ao mais recente.
+// image (opcional): caminho de um GIF/print em public/projetos/, ex.: '/projetos/dayup.gif'.
 export const projects = [
   {
     id: 1,
@@ -53,6 +54,7 @@ export const projects = [
     },
     tech: ['HTML', 'CSS', 'JavaScript'],
     repo: 'https://github.com/thuzada/ti-1-pmg-cc-m-20241-g3-descontrole-financeiro',
+    image: '/projetos/descontrole-financeiro.gif',
   },
   {
     id: 2,
@@ -65,6 +67,7 @@ export const projects = [
     },
     tech: ['C'],
     repo: 'https://github.com/thuzada/Sistema-de-banco-em-C',
+    image: '/projetos/banco-c.gif',
   },
   {
     id: 3,
@@ -77,6 +80,7 @@ export const projects = [
     },
     tech: ['Java'],
     repo: 'https://github.com/thuzada/CRUD-em-java',
+    image: '/projetos/crud-java.gif',
   },
   {
     id: 4,
@@ -125,6 +129,7 @@ export const projects = [
     },
     tech: ['Python'],
     repo: 'https://github.com/thuzada/Calculadora-Simples',
+    image: '/projetos/calculadora.gif',
   },
   {
     id: 8,
