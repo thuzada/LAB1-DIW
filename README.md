@@ -27,7 +27,7 @@
 ---
 
 ## 🔗 Links Úteis
-* 🌐 **Site publicado:** _(preencher após o deploy — ex.: https://seu-portfolio.vercel.app)_
+* 🌐 **Site publicado:** https://portfolio-rho-blond-nuvcwsmpx2.vercel.app
 * 🎨 **Protótipo Figma:** _(preencher com o link do Figma)_
 
 ---
