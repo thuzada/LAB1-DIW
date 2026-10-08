@@ -134,12 +134,49 @@ portfolio/
 └── vite.config.js
 ```
 
-## 🎨 Protótipos (Figma)
-_Insira aqui as imagens dos wireframes de média fidelidade (Home/Sobre, Projetos, Experiências, Contato — desktop e mobile)._
+## 🎨 Protótipos (Wireframes)
+Wireframes de média fidelidade das quatro páginas, em desktop e mobile (arquivos em [`wireframes/`](wireframes/), em PNG e SVG).
 
-```md
-![Wireframe Sobre](docs/wireframe-sobre.png)
-```
+### Visão geral
+![Board completo](wireframes/00%20-%20Board%20completo%20(Desktop%20+%20Mobile).png)
+
+### Desktop
+**Desktop — Sobre**
+
+![Desktop — Sobre](wireframes/Desktop%20-%2001%20Sobre.png)
+
+**Desktop — Projetos**
+
+![Desktop — Projetos](wireframes/Desktop%20-%2002%20Projetos.png)
+
+**Desktop — Experiências**
+
+![Desktop — Experiências](wireframes/Desktop%20-%2003%20Experiencias.png)
+
+**Desktop — Contato**
+
+![Desktop — Contato](wireframes/Desktop%20-%2004%20Contato.png)
+
+### Mobile
+**Mobile — Sobre**
+
+![Mobile — Sobre](wireframes/Mobile%20-%2001%20Sobre.png)
+
+**Mobile — Projetos**
+
+![Mobile — Projetos](wireframes/Mobile%20-%2002%20Projetos.png)
+
+**Mobile — Experiências**
+
+![Mobile — Experiências](wireframes/Mobile%20-%2003%20Experiencias.png)
+
+**Mobile — Contato**
+
+![Mobile — Contato](wireframes/Mobile%20-%2004%20Contato.png)
+
+**Mobile — Menu aberto**
+
+![Mobile — Menu aberto](wireframes/Mobile%20-%2005%20Menu%20aberto.png)
 
 ## 🎬 Demonstração
 _Insira prints/GIFs do site em funcionamento (navegação, troca de idioma, formulário)._
