@@ -33,7 +33,8 @@ export default function Contact() {
       await emailjs.send(
         SERVICE,
         TEMPLATE,
-        { from_name: data.name, reply_to: data.email, message: data.message },
+        // nomes usados pelo template "Contact Us" do EmailJS ({{name}}, {{email}}, {{title}}, {{message}})
+        { name: data.name, email: data.email, title: 'mensagem pelo portfólio', message: data.message },
         { publicKey: KEY },
       )
       setStatus('ok')
