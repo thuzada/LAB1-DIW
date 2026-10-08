@@ -60,6 +60,7 @@ main.container { flex: 1; padding-top: 32px; padding-bottom: 48px; }
 .timeline { list-style: none; margin: 24px 0 0; padding: 0 0 0 28px; border-left: 2px solid var(--surface-2); }
 .timeline__item { position: relative; margin-bottom: 24px; }
 .timeline__item::before { content: ''; position: absolute; left: -37px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: 3px solid var(--bg); }
+.timeline__meta { display: flex; align-items: center; gap: 10px; }
 .timeline__date { color: var(--accent); font-family: ui-monospace, monospace; font-size: .9rem; }
 
 /* Contact */
@@ -91,4 +92,3 @@ main.container { flex: 1; padding-top: 32px; padding-bottom: 48px; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
-.group-title { margin-top: 32px; color: var(--accent); }

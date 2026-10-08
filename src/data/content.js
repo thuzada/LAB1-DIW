@@ -39,8 +39,8 @@ export const about = {
   },
 }
 
-// pinned: true = aparece primeiro (repositórios fixados no GitHub).
-// Dentro de cada grupo a timeline é ordenada do mais antigo ao mais recente.
+// pinned: true = recebe o selo "Destaque" (repositórios fixados no GitHub).
+// A timeline é ordenada pela data (AAAA-MM), do mais antigo ao mais recente.
 export const projects = [
   {
     id: 1,
@@ -189,7 +189,7 @@ export const experiences = [
 export const ui = {
   pt: {
     nav: { about: 'Sobre', projects: 'Projetos', experience: 'Experiências', contact: 'Contato' },
-    projects: { title: 'Projetos', subtitle: 'Linha do tempo, do mais antigo ao mais recente.', repo: 'Ver repositório', pinned: 'Destaques', others: 'Outros projetos' },
+    projects: { title: 'Projetos', subtitle: 'Linha do tempo, do mais antigo ao mais recente.', repo: 'Ver repositório', pinned: 'Destaque' },
     experience: { title: 'Experiências', subtitle: 'Trabalho, estágios, open source e eventos.' },
     contact: {
       title: 'Contato',
@@ -213,7 +213,7 @@ export const ui = {
   },
   en: {
     nav: { about: 'About', projects: 'Projects', experience: 'Experience', contact: 'Contact' },
-    projects: { title: 'Projects', subtitle: 'Timeline, from oldest to newest.', repo: 'View repository', pinned: 'Featured', others: 'Other projects' },
+    projects: { title: 'Projects', subtitle: 'Timeline, from oldest to newest.', repo: 'View repository', pinned: 'Featured' },
     experience: { title: 'Experience', subtitle: 'Work, internships, open source and events.' },
     contact: {
       title: 'Contact',
