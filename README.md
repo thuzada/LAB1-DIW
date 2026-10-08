@@ -59,7 +59,7 @@ O site abre em http://localhost:5173. Outros comandos: `npm run build`, `npm run
 
 ### Configurando o envio de e-mail
 
-O formulário usa o EmailJS. Crie uma conta gratuita em https://www.emailjs.com/, cadastre um serviço de e-mail e um template que use as variáveis `{{from_name}}`, `{{reply_to}}` e `{{message}}`. Depois preencha o `.env`:
+O formulário usa o EmailJS. Crie uma conta gratuita em https://www.emailjs.com/, cadastre um serviço de e-mail e crie um template a partir do modelo "Contact Us" (ele usa as variáveis `{{name}}`, `{{email}}`, `{{title}}` e `{{message}}`). Depois preencha o `.env`:
 
 ```env
 VITE_EMAILJS_SERVICE_ID=service_xxxxxxx
