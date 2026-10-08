@@ -1,14 +1,13 @@
 // =====================================================================
 // CONTEÚDO DO PORTFÓLIO — edite aqui seus dados reais.
-// Tudo que está marcado como EXEMPLO deve ser substituído pelos seus dados.
 // =====================================================================
 
 export const profile = {
   name: 'Arthur Domingos',
   email: 'ar7huraugusto@gmail.com',
   whatsapp: '5531993097625', // DDI + DDD + número, só dígitos
-  linkedin: 'https://www.linkedin.com/in/seu-usuario', // EXEMPLO
-  github: 'https://github.com/thuzada', // EXEMPLO
+  linkedin: 'https://www.linkedin.com/in/arthuraugust0/',
+  github: 'https://github.com/thuzada',
 }
 
 export const skills = [
