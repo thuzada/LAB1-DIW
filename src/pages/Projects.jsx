@@ -37,9 +37,6 @@ export default function Projects() {
                 {p.pinned && <span className="badge">{t.projects.pinned}</span>}
               </p>
               <h3 className="work__name">{p.name[lang]}</h3>
-              {p.image && (
-                <img className="work__media" src={p.image} alt={p.name[lang]} loading="lazy" />
-              )}
               <p className="work__desc">{p.description[lang]}</p>
               <ul className="tags">
                 {p.tech.map((x) => <li key={x}>{x}</li>)}
