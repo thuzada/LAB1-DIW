@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
-import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import Section from '../components/Section'
 import { useLang } from '../context/LanguageContext'
 import { profile } from '../data/content'
@@ -10,10 +9,10 @@ const { VITE_EMAILJS_SERVICE_ID: SERVICE, VITE_EMAILJS_TEMPLATE_ID: TEMPLATE, VI
   import.meta.env
 
 const socials = [
-  { label: 'E-mail', href: `mailto:${profile.email}`, Icon: FaEnvelope },
-  { label: 'WhatsApp', href: `https://wa.me/${profile.whatsapp}`, Icon: FaWhatsapp },
-  { label: 'LinkedIn', href: profile.linkedin, Icon: FaLinkedin },
-  { label: 'GitHub', href: profile.github, Icon: FaGithub },
+  { label: 'E-mail', href: `mailto:${profile.email}` },
+  { label: 'WhatsApp', href: `https://wa.me/${profile.whatsapp}` },
+  { label: 'LinkedIn', href: profile.linkedin },
+  { label: 'GitHub', href: profile.github },
 ]
 
 export default function Contact() {
@@ -47,18 +46,22 @@ export default function Contact() {
   const messages = { ok: c.ok, fail: c.fail, config: c.notConfigured }
 
   return (
-    <Section title={c.title} subtitle={c.subtitle}>
-      <ul className="socials">
-        {socials.map(({ label, href, Icon }) => (
-          <li key={label}>
-            <a href={href} target="_blank" rel="noreferrer" aria-label={label} title={label} className="social">
-              <Icon size={28} />
-            </a>
-          </li>
-        ))}
-      </ul>
+    <Section kicker={`IV · ${c.title}`} title={t.cover.lead} subtitle={c.subtitle}>
+      <div className="contact">
+        <div>
+          <h2 className="label">{t.cover.elsewhere}</h2>
+          <ul className="links">
+            {socials.map(({ label, href }) => (
+              <li key={label}>
+                <a href={href} target="_blank" rel="noreferrer">{label} <span aria-hidden="true">↗</span></a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <form className="card form" onSubmit={handleSubmit(onSubmit)} noValidate>
+        <div>
+          <h2 className="label">{t.cover.write}</h2>
+      <form className="form" onSubmit={handleSubmit(onSubmit)} noValidate>
         <label>
           {c.name}
           <input
@@ -107,6 +110,8 @@ export default function Contact() {
           </p>
         )}
       </form>
+        </div>
+      </div>
     </Section>
   )
 }

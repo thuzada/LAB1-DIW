@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { FaGithub } from 'react-icons/fa'
 import Section from '../components/Section'
 import { useLang } from '../context/LanguageContext'
 import { projects } from '../data/content'
@@ -18,34 +17,37 @@ export default function Projects() {
   const { lang, t } = useLang()
 
   return (
-    <Section title={t.projects.title} subtitle={t.projects.subtitle}>
-      <ol className="timeline">
+    <Section kicker={`II · ${t.cover.work}s`} title={t.projects.title} subtitle={t.projects.subtitle}>
+      <ol className="works">
         {timeline.map((p, i) => (
           <motion.li
             key={p.id}
-            className="timeline__item"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.05 }}
+            className="work"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-40px' }}
+            transition={{ duration: 0.5 }}
           >
-            <div className="timeline__meta">
-              <time className="timeline__date" dateTime={p.date}>{formatDate(p.date, lang)}</time>
-              {p.pinned && <span className="tag">{t.projects.pinned}</span>}
-            </div>
-            <article className="card project">
+            <span className="work__num" aria-label={`${t.cover.work} ${i + 1}`}>
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <div className="work__body">
+              <p className="work__meta">
+                <time dateTime={p.date}>{formatDate(p.date, lang)}</time>
+                {p.pinned && <span className="badge">{t.projects.pinned}</span>}
+              </p>
+              <h3 className="work__name">{p.name[lang]}</h3>
               {p.image && (
-                <img className="project__media" src={p.image} alt={p.name[lang]} loading="lazy" />
+                <img className="work__media" src={p.image} alt={p.name[lang]} loading="lazy" />
               )}
-              <h2>{p.name[lang]}</h2>
-              <p>{p.description[lang]}</p>
-              <ul className="chips">
-                {p.tech.map((x) => <li key={x} className="chip">{x}</li>)}
+              <p className="work__desc">{p.description[lang]}</p>
+              <ul className="tags">
+                {p.tech.map((x) => <li key={x}>{x}</li>)}
               </ul>
-              <a href={p.repo} target="_blank" rel="noreferrer" className="btn btn--ghost">
-                <FaGithub /> {t.projects.repo}
-              </a>
-            </article>
+            </div>
+            <a href={p.repo} target="_blank" rel="noreferrer" className="work__link">
+              {t.projects.repo} ↗
+            </a>
           </motion.li>
         ))}
       </ol>
