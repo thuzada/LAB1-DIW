@@ -164,9 +164,29 @@ export const experiences = [
     org: 'Polícia Rodoviária Federal',
     role: { pt: 'Estagiário de TI', en: 'IT Intern' },
     period: { pt: '2024 – 2025', en: '2024 – 2025' },
-    description: {
-      pt: 'Suporte técnico de hardware e software, diagnóstico de rede, atualização de sistemas e atendimento a usuários, aplicando boas práticas de TI para manter a confiabilidade dos sistemas.',
-      en: 'Hardware and software technical support, network troubleshooting, system updates and user assistance, applying IT best practices to keep systems reliable.',
+    summary: {
+      pt: 'Suporte técnico de TI, com foco na confiabilidade dos sistemas.',
+      en: 'IT technical support, focused on system reliability.',
+    },
+    highlights: {
+      pt: [
+        'Suporte técnico de hardware e software.',
+        'Diagnóstico de problemas de rede.',
+        'Atualização de sistemas.',
+        'Atendimento a usuários.',
+        'Aplicação de boas práticas de TI para manter a confiabilidade dos sistemas.',
+      ],
+      en: [
+        'Hardware and software technical support.',
+        'Network troubleshooting.',
+        'System updates.',
+        'User assistance.',
+        'Application of IT best practices to keep systems reliable.',
+      ],
+    },
+    tools: {
+      pt: ['Hardware', 'Software', 'Redes', 'Atendimento a usuários'],
+      en: ['Hardware', 'Software', 'Networking', 'User support'],
     },
   },
   {
@@ -174,9 +194,25 @@ export const experiences = [
     org: 'Teknisa',
     role: { pt: 'Estagiário Fullstack', en: 'Fullstack Developer Intern' },
     period: { pt: '2025', en: '2025' },
-    description: {
-      pt: 'Apoio na migração de componentes do framework interno de Vue 2 para Vue 3; desenvolvimento de componentes front-end com Vue.js, Vuetify e TypeScript; apoio no desenvolvimento de APIs e na integração front-back.',
-      en: 'Helped migrate internal framework components from Vue 2 to Vue 3; built front-end components with Vue.js, Vuetify and TypeScript; supported API development and front-to-back integration.',
+    summary: {
+      pt: 'Atuação em front-end e integração com APIs, apoiando a migração do framework interno para Vue 3.',
+      en: 'Front-end and API integration work, supporting the internal framework migration to Vue 3.',
+    },
+    highlights: {
+      pt: [
+        'Apoio na migração de componentes do framework interno de Vue 2 para Vue 3.',
+        'Desenvolvimento de componentes front-end com Vue.js, Vuetify e TypeScript.',
+        'Apoio no desenvolvimento de APIs e na integração front-back.',
+      ],
+      en: [
+        'Helped migrate internal framework components from Vue 2 to Vue 3.',
+        'Built front-end components with Vue.js, Vuetify and TypeScript.',
+        'Supported API development and front-to-back integration.',
+      ],
+    },
+    tools: {
+      pt: ['Vue.js', 'Vuetify', 'TypeScript', 'APIs'],
+      en: ['Vue.js', 'Vuetify', 'TypeScript', 'APIs'],
     },
   },
   {
@@ -184,9 +220,29 @@ export const experiences = [
     org: 'Teknisa',
     role: { pt: 'Desenvolvedor Fullstack Júnior', en: 'Fullstack Developer Junior' },
     period: { pt: '2025 – 2026', en: '2025 – 2026' },
-    description: {
-      pt: 'Migração de componentes Vue 2 → Vue 3; componentes reutilizáveis com Vue 3, Vuetify e TypeScript; plataforma No-Code Zeedhi; assistente de IA com arquitetura RAG usando OpenAI API, LangChain e Qdrant; APIs REST com Node.js; Git e Docker.',
-      en: 'Vue 2 → Vue 3 component migration; reusable components with Vue 3, Vuetify and TypeScript; Zeedhi No-Code platform; AI assistant with RAG architecture using OpenAI API, LangChain and Qdrant; REST APIs with Node.js; Git and Docker.',
+    summary: {
+      pt: 'Atuação fullstack: componentes reutilizáveis, plataforma No-Code Zeedhi, APIs em Node.js e um assistente de IA com RAG.',
+      en: 'Fullstack work: reusable components, the Zeedhi No-Code platform, Node.js APIs and an AI assistant with RAG.',
+    },
+    highlights: {
+      pt: [
+        'Migração de componentes de Vue 2 para Vue 3.',
+        'Componentes reutilizáveis com Vue 3, Vuetify e TypeScript.',
+        'Desenvolvimento na plataforma No-Code Zeedhi.',
+        'Assistente de IA com arquitetura RAG, usando OpenAI API, LangChain e Qdrant.',
+        'APIs REST com Node.js.',
+      ],
+      en: [
+        'Vue 2 to Vue 3 component migration.',
+        'Reusable components with Vue 3, Vuetify and TypeScript.',
+        'Development on the Zeedhi No-Code platform.',
+        'AI assistant with RAG architecture, using OpenAI API, LangChain and Qdrant.',
+        'REST APIs with Node.js.',
+      ],
+    },
+    tools: {
+      pt: ['Vue 3', 'Vuetify', 'TypeScript', 'Node.js', 'REST APIs', 'RAG', 'OpenAI API', 'LangChain', 'Qdrant', 'Git', 'Docker', 'Zeedhi'],
+      en: ['Vue 3', 'Vuetify', 'TypeScript', 'Node.js', 'REST APIs', 'RAG', 'OpenAI API', 'LangChain', 'Qdrant', 'Git', 'Docker', 'Zeedhi'],
     },
   },
 ]
@@ -219,6 +275,7 @@ export const ui = {
       toc: 'Nesta edição', theme: 'Alternar tema', chapter: 'Capítulo', work: 'Obra',
       colophon: 'Composto em Fraunces e Inter Tight. Feito com React e Vite.',
       lead: 'Vamos conversar?', elsewhere: 'Em outros lugares', write: 'Escreva aqui',
+      activities: 'Atividades', tools: 'Ferramentas e competências',
     },
     hello: 'Olá, eu sou',
     seeProjects: 'Ver projetos',
@@ -250,6 +307,7 @@ export const ui = {
       toc: 'In this issue', theme: 'Toggle theme', chapter: 'Chapter', work: 'Work',
       colophon: 'Set in Fraunces and Inter Tight. Built with React and Vite.',
       lead: "Let's talk?", elsewhere: 'Elsewhere', write: 'Write here',
+      activities: 'Responsibilities', tools: 'Tools & skills',
     },
     hello: "Hi, I'm",
     seeProjects: 'See projects',

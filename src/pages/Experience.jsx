@@ -23,7 +23,22 @@ export default function Experience() {
             <div>
               <h2 className="chapter__org">{e.org}</h2>
               <p className="chapter__role">{e.role[lang]} <span>· {e.period[lang]}</span></p>
-              <p className="chapter__text">{e.description[lang]}</p>
+              <p className="chapter__text">{e.summary[lang]}</p>
+
+              <div className="chapter__cols">
+                <div>
+                  <h3 className="label">{t.cover.activities}</h3>
+                  <ul className="bullets">
+                    {e.highlights[lang].map((h) => <li key={h}>{h}</li>)}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="label">{t.cover.tools}</h3>
+                  <ul className="tags">
+                    {e.tools[lang].map((x) => <li key={x}>{x}</li>)}
+                  </ul>
+                </div>
+              </div>
             </div>
           </motion.article>
         ))}

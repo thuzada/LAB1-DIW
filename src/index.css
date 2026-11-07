@@ -258,7 +258,13 @@ button { font: inherit; color: inherit; }
 .chapter__org { font-family: var(--serif); font-variation-settings: 'opsz' 144; font-weight: 700; font-size: clamp(2rem, 6vw, 3.6rem); line-height: 1; letter-spacing: -0.03em; }
 .chapter__role { margin: 10px 0 14px; font-weight: 600; }
 .chapter__role span { color: var(--muted); font-weight: 400; }
-.chapter__text { font-family: var(--serif); font-size: 1.2rem; line-height: 1.6; max-width: 62ch; }
+.chapter__text { font-family: var(--serif); font-size: 1.3rem; line-height: 1.5; max-width: 52ch; font-style: italic; color: var(--muted); }
+.chapter__cols { display: grid; gap: 28px clamp(24px, 4vw, 48px); margin-top: 28px; }
+@media (min-width: 900px) { .chapter__cols { grid-template-columns: 1.4fr 1fr; } }
+.bullets li { position: relative; padding: 8px 0 8px 24px; border-bottom: 1px solid var(--paper-2); line-height: 1.5; }
+.bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.chapter__cols .tags { margin-top: 0; }
+.chapter__cols .tags li { padding: 3px 0; }
 
 /* ---------- Contato ---------- */
 .contact { display: grid; gap: clamp(32px, 5vw, 64px); }
