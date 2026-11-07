@@ -167,7 +167,7 @@ button { font: inherit; color: inherit; }
 .cover__title {
   font-family: var(--serif); font-variation-settings: 'opsz' 144;
   font-weight: 700; line-height: 0.92; letter-spacing: -0.04em;
-  font-size: clamp(3.4rem, 14vw, 10.5rem);
+  font-size: clamp(2.8rem, 11vw, 8.5rem);
   margin: 16px 0 28px;
 }
 .cover__line { display: block; }
