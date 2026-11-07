@@ -40,8 +40,9 @@ export const about = {
   },
 }
 
-// pinned: true = aparece primeiro (repositórios fixados no GitHub).
-// Dentro de cada grupo a timeline é ordenada do mais antigo ao mais recente.
+// pinned: true = recebe o selo "Destaque" (repositórios fixados no GitHub).
+// A timeline é ordenada pela data (AAAA-MM), do mais antigo ao mais recente.
+// image (opcional): caminho de um GIF/print em public/projetos/, ex.: '/projetos/dayup.gif'.
 export const projects = [
   {
     id: 1,
@@ -54,6 +55,7 @@ export const projects = [
     },
     tech: ['HTML', 'CSS', 'JavaScript'],
     repo: 'https://github.com/thuzada/ti-1-pmg-cc-m-20241-g3-descontrole-financeiro',
+    image: '/projetos/descontrole-financeiro.gif',
   },
   {
     id: 2,
@@ -66,6 +68,7 @@ export const projects = [
     },
     tech: ['C'],
     repo: 'https://github.com/thuzada/Sistema-de-banco-em-C',
+    image: '/projetos/banco-c.gif',
   },
   {
     id: 3,
@@ -78,6 +81,7 @@ export const projects = [
     },
     tech: ['Java'],
     repo: 'https://github.com/thuzada/CRUD-em-java',
+    image: '/projetos/crud-java.gif',
   },
   {
     id: 4,
@@ -126,6 +130,7 @@ export const projects = [
     },
     tech: ['Python'],
     repo: 'https://github.com/thuzada/Calculadora-Simples',
+    image: '/projetos/calculadora.gif',
   },
   {
     id: 8,
@@ -190,7 +195,7 @@ export const experiences = [
 export const ui = {
   pt: {
     nav: { about: 'Sobre', projects: 'Projetos', experience: 'Experiências', contact: 'Contato' },
-    projects: { title: 'Projetos', subtitle: 'Linha do tempo, do mais antigo ao mais recente.', repo: 'Ver repositório', pinned: 'Destaques', others: 'Outros projetos' },
+    projects: { title: 'Projetos', subtitle: 'Linha do tempo, do mais antigo ao mais recente.', repo: 'Ver repositório', pinned: 'Destaque' },
     experience: { title: 'Experiências', subtitle: 'Trabalho e estágios, em ordem cronológica.' },
     contact: {
       title: 'Contato',
@@ -221,7 +226,7 @@ export const ui = {
   },
   en: {
     nav: { about: 'About', projects: 'Projects', experience: 'Experience', contact: 'Contact' },
-    projects: { title: 'Projects', subtitle: 'Timeline, from oldest to newest.', repo: 'View repository', pinned: 'Featured', others: 'Other projects' },
+    projects: { title: 'Projects', subtitle: 'Timeline, from oldest to newest.', repo: 'View repository', pinned: 'Featured' },
     experience: { title: 'Experience', subtitle: 'Work and internships, in chronological order.' },
     contact: {
       title: 'Contact',
