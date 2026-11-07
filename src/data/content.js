@@ -10,10 +10,11 @@ export const profile = {
   github: 'https://github.com/thuzada',
 }
 
-export const skills = [
-  'Vue.js (2 e 3)', 'Vuetify', 'TypeScript', 'JavaScript', 'HTML', 'CSS',
-  'Node.js', 'REST APIs', 'PostgreSQL', 'Java',
-  'RAG', 'OpenAI API', 'LangChain', 'Qdrant', 'Git', 'Docker',
+export const skillGroups = [
+  { name: { pt: 'Front-end', en: 'Front-end' }, items: ['Vue.js (2 e 3)', 'Vuetify', 'TypeScript', 'JavaScript', 'HTML', 'CSS'] },
+  { name: { pt: 'Back-end', en: 'Back-end' }, items: ['Node.js', 'REST APIs', 'PostgreSQL', 'Java'] },
+  { name: { pt: 'IA aplicada', en: 'Applied AI' }, items: ['RAG', 'OpenAI API', 'LangChain', 'Qdrant'] },
+  { name: { pt: 'Ferramentas', en: 'Tooling' }, items: ['Git', 'Docker'] },
 ]
 
 export const about = {
@@ -190,7 +191,7 @@ export const ui = {
   pt: {
     nav: { about: 'Sobre', projects: 'Projetos', experience: 'Experiências', contact: 'Contato' },
     projects: { title: 'Projetos', subtitle: 'Linha do tempo, do mais antigo ao mais recente.', repo: 'Ver repositório', pinned: 'Destaques', others: 'Outros projetos' },
-    experience: { title: 'Experiências', subtitle: 'Trabalho, estágios, open source e eventos.' },
+    experience: { title: 'Experiências', subtitle: 'Trabalho e estágios, em ordem cronológica.' },
     contact: {
       title: 'Contato',
       subtitle: 'Vamos conversar? Use os links ou envie uma mensagem.',
@@ -207,6 +208,13 @@ export const ui = {
       minMessage: 'A mensagem deve ter ao menos 10 caracteres',
     },
     footer: 'Todos os direitos reservados.',
+    cover: {
+      issue: 'Edição', kicker: 'Portfólio & Currículo',
+      lines: ['Código,', 'com sotaque', 'mineiro.'],
+      toc: 'Nesta edição', theme: 'Alternar tema', chapter: 'Capítulo', work: 'Obra',
+      colophon: 'Composto em Fraunces e Inter Tight. Feito com React e Vite.',
+      lead: 'Vamos conversar?', elsewhere: 'Em outros lugares', write: 'Escreva aqui',
+    },
     hello: 'Olá, eu sou',
     seeProjects: 'Ver projetos',
     contactMe: 'Fale comigo',
@@ -214,7 +222,7 @@ export const ui = {
   en: {
     nav: { about: 'About', projects: 'Projects', experience: 'Experience', contact: 'Contact' },
     projects: { title: 'Projects', subtitle: 'Timeline, from oldest to newest.', repo: 'View repository', pinned: 'Featured', others: 'Other projects' },
-    experience: { title: 'Experience', subtitle: 'Work, internships, open source and events.' },
+    experience: { title: 'Experience', subtitle: 'Work and internships, in chronological order.' },
     contact: {
       title: 'Contact',
       subtitle: "Let's talk! Use the links or send a message.",
@@ -231,6 +239,13 @@ export const ui = {
       minMessage: 'Message must have at least 10 characters',
     },
     footer: 'All rights reserved.',
+    cover: {
+      issue: 'Issue', kicker: 'Portfolio & Résumé',
+      lines: ['Code,', 'with a Minas', 'accent.'],
+      toc: 'In this issue', theme: 'Toggle theme', chapter: 'Chapter', work: 'Work',
+      colophon: 'Set in Fraunces and Inter Tight. Built with React and Vite.',
+      lead: "Let's talk?", elsewhere: 'Elsewhere', write: 'Write here',
+    },
     hello: "Hi, I'm",
     seeProjects: 'See projects',
     contactMe: 'Get in touch',

@@ -12,7 +12,7 @@ export default function App() {
     <div className="app">
       <ScrollToTop />
       <Header />
-      <main className="container">
+      <main className="container main">
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/projetos" element={<Projects />} />
