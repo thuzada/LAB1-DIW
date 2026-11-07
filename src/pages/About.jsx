@@ -18,11 +18,11 @@ export default function About() {
         <p className="kicker">{t.cover.kicker}</p>
         <h1 className="cover__title">
           {t.cover.lines.map((l, i) => (
-            <span key={l} className={i === 1 ? 'cover__line cover__line--em' : 'cover__line'}>{l}</span>
+            <span key={l} className={i === t.cover.lines.length - 1 ? 'cover__line cover__line--em' : 'cover__line'}>{l}</span>
           ))}
         </h1>
         <p className="cover__byline">
-          {t.hello} <strong>{profile.name}</strong> — {about[lang].role}
+          <strong>{profile.name}</strong> — {about[lang].role}
         </p>
       </header>
 

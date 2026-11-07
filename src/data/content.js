@@ -215,7 +215,7 @@ export const ui = {
     footer: 'Todos os direitos reservados.',
     cover: {
       issue: 'Edição', kicker: 'Portfólio & Currículo',
-      lines: ['Código,', 'com sotaque', 'mineiro.'],
+      lines: ['Desenvolvedor', 'fullstack.'],
       toc: 'Nesta edição', theme: 'Alternar tema', chapter: 'Capítulo', work: 'Obra',
       colophon: 'Composto em Fraunces e Inter Tight. Feito com React e Vite.',
       lead: 'Vamos conversar?', elsewhere: 'Em outros lugares', write: 'Escreva aqui',
@@ -246,7 +246,7 @@ export const ui = {
     footer: 'All rights reserved.',
     cover: {
       issue: 'Issue', kicker: 'Portfolio & Résumé',
-      lines: ['Code,', 'with a Minas', 'accent.'],
+      lines: ['Fullstack', 'developer.'],
       toc: 'In this issue', theme: 'Toggle theme', chapter: 'Chapter', work: 'Work',
       colophon: 'Set in Fraunces and Inter Tight. Built with React and Vite.',
       lead: "Let's talk?", elsewhere: 'Elsewhere', write: 'Write here',
